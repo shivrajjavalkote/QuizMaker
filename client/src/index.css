@@ -1,0 +1,129 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-down {
+  0% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-up {
+  0% { transform: translateY(100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out;
+}
+
+/* New Custom CSS Enhancements */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f0e6f8);
+  color: #5c5454;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bg-white {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bg-opacity-70 {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.bg-blue-800 {
+  background: linear-gradient(90deg, #799fb4, #3b82f6);
+}
+
+.bg-opacity-80 {
+  background-color: rgba(112, 169, 216, 0.925);
+}
+
+button {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.text-2xl {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.border-gray-300 {
+  border-color: #d1d5db;
+}
+
+.outline-gray-200 {
+  outline-color: #e5e7eb;
+}
+
+.hover\:bg-blue-100:hover {
+  background-color: #dbeafe;
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #2563eb;
+}
+
+.hover\:bg-green-600:hover {
+  background-color: #166534;
+}
+
+.hover\:bg-red-600:hover {
+  background-color: #dc2626;
+}
+
+.hover\:text-blue-200:hover {
+  color: #93c5fd;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .text-xl {
+    font-size: 1.25rem;
+  }
+
+  .text-2xl {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}

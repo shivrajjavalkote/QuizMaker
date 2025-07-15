@@ -1,0 +1,54 @@
+MERN Quiz Platform
+Overview
+The MERN Quiz Platform is a full-stack web application built with MongoDB, Express.js, React, and Node.js. It allows users to register, log in, create quizzes, take quizzes, and view results. Admins have additional privileges to edit and delete quizzes. The application features a modern, transparent UI with flexbox layouts, Tailwind CSS, and animations (fade-in, slide-down, slide-up).
+Features
+
+Authentication:
+User registration and login with JWT-based authentication.
+Admin account (username: shivraj, password: Admin@123) with elevated privileges.
+Users can create and take quizzes; admins can edit/delete quizzes.
+
+
+Quiz Management:
+Create quizzes with a title, questions, options, and correct answers.
+View a list of quizzes with options to take, edit (admin only), or delete (admin only).
+Take quizzes with a question-by-question interface, displaying results with score and answer feedback.
+
+
+Prerequisites
+
+Node.js (v16 or higher)
+MongoDB (local or MongoDB Atlas)
+npm
+
+Setup Instructions
+Backend Setup
+Install dependencies:npm install
+Start the backend server:npm start
+
+Frontend Setup
+Navigate to the client directory:cd mern-quiz-platform/client
+Install dependencies:npm install
+
+
+Create a Quiz:
+Navigate to Create Quiz from the homepage.
+Enter a title (e.g., “Test Quiz”), add questions (e.g., “What is 2+2?”), options (e.g., “3”, “4”, “5”, “6”), and select the correct answer (e.g., “4”).
+Submit to save the quiz.
+
+Take a Quiz:
+Go to Quiz List, click “Take Quiz” on a quiz.
+Answer each question, click “Next” or “Submit”.
+View results with score (e.g., 1 / 1) and answer feedback (e.g., “Your Answer: 4”, “Correct”).
+
+
+Admin Actions:
+
+Login as shivraj/Admin@123.
+In Quiz List, use “Edit” or “Delete” buttons to modify or remove quizzes.
+
+
+License
+MIT License. See LICENSE for details.
+Contact
+For support, email javalkoteshivraj.com
